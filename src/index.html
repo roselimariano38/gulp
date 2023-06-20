@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css">
+
     <!--
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets/owl.carousel.css">
@@ -13,100 +14,69 @@
     <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets/owl.theme.default.css'">
     <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.css"> -->
 
-    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
     <!--
     <link rel="stylesheet" href=" ./src/css/animate.css/animate.css">
     <link rel="stylesheet" href="./src/css/style.css">
     -->
-   
-    
-    <title>gatopetsdog</title>
-
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<title>gatopetsdog</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="height: 280px;">
+    <nav class="navbar navbar-expand-lg " style="height: 270px;">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#produtos">
-                <img class="piscar-image" src="./dist/images/PetCat.png" alt="" style="height: 260px; width: 1120px;">
+                <img id="imgbaner" src="./images/@gatopesdog (6).png" alt=""
+                    style="width: 1160px; height: 260px; padding-bottom: 20px; ">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
         </div>
     </nav>
-    <div class="container position-relative bottom-0 start-0">
-        <div class="d-flex flex-row-reverse fs-6">
-            <ul class="nav">
-                <li><a class="nav-link active link-dark" href="./projeto17.jquery.html">Home</a></li>
-                <li><a class="nav-link link-dark" href="#produtos">Produtos</a></li>
-                <li><a class="nav-link link-dark" href="#sobre" data-bs-toggle="modal"
-                        data-bs-target="#modalSobre">Sobre</a></li>
-                <li><a class="nav-link link-dark" href="#contato" data-bs-toggle="modal"
-                        data-bs-target="#modalContato">Contato</a></li>
-            </ul>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./projeto17.jquery.html">PROMOÇÃO DO DIA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MAIS INFORMAÇÕES DO SITE</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link link-dark active" aria-current="page"
-                                href="./projeto17.jquery.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark" href="#produtos">PRODUTOS</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input id="search-input" class="form-control me-2" type="search" placeholder="procurar"
-                            aria-label="procurar">
-                        <button class="btn btn-primary" type="submit">PROCURAR</button>
-                    </form>
 
-                </div>
+    <nav class="navbar  bg-primary">
+        <div class="container-fluid">
+
+            <div class="d-flex fs-4 justify-content-end">
+
+                <ul class="nav ml-auto">
+                    <li><a class="nav-link active  link-light" href="./projeto17.jquery.html">Home</a></li>
+                    <li><a class="nav-link link-light" href="#produtos">Produtos</a></li>
+                    <li><a class="nav-link link-light" href="#sobre" data-bs-toggle="modal"
+                            data-bs-target="#modalSobre">Sobre</a></li>
+                    <li><a class="nav-link link-light" href="#contato" data-bs-toggle="modal"
+                            data-bs-target="#modalContato">Contato</a></li>
+                </ul>
+
+                <form class="d-flex " role="search">
+                    <input id="search-input" class="form-control me-4" type="search" placeholder="Procurar"
+                        aria-label="Procurar">
+                    <button id="search-button" class="btn btn-light" type="button"
+                        onclick="enviarMensagem()">Procurar</button>
+
             </div>
         </div>
-    </nav>
 
+    </nav>
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-md-6">
-                    <div class="custom-line-dec text-center">
-                        <img class="piscar-image rounded-circle img-responsive" src="./dist/images/petshopazul.jpg" alt=""
-                            style="width: 40%;">
-                        <p class="display-4 text-primary animate__animated animate__slideInUp owl-carousel"
-                            style="font-size: 2rem;">Encontre os melhores acessórios para o seu amado pet na nossa loja!
-                        </p>
-                    </div>
+                <div class="col">
+                    <img class="baneer1" src="./images/@gatopetsdogshop.png" alt="Banner Image">
+                    <p class=" display-6 text-primary animate__animated">
+                        Encontre os melhores acessórios para o seu amado pet na nossa loja!
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-    <div id="featured" class="featured-items">
+    <div id="featured" class="featured-items text-primary">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3  mx-auto text-center my-4">
                     <div class="section-heading">
                         <div class="line-dec"></div>
                         <h1 id="produtos">Destaques</h1>
@@ -117,16 +87,16 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/coleira.jpg" alt="Item 1">
-                            <h4>Arreios para animais de estimação com decoração de asa de 1 peça e coleira de 1 peça
+                            <img src="./images/coleira.jpg" alt="Item 1">
+                            <h4>Arreios para animais de estimação
                             </h4>
                             <h6>R$ 15,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
 
                         <div class="item">
-                            <img src="./dist/images/Coleira1.jpg" alt="Item 2">
-                            <h4>Coleira vermelha com decoração de arco</h4>
+                            <img src="./images/Coleira1.jpg" alt="Item 2">
+                            <h4>Coleira vermelha </h4>
                             <h6>R$ 12,90</h6>
                             <a href="single-product.html" class="btn-comprar">Comprar</a>
                         </div>
@@ -134,8 +104,8 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/Coleira2.jpg" alt="Item 3">
-                            <h4>Coleira cinza com decoração de arco</h4>
+                            <img src="./images/Coleira2.jpg" alt="Item 3">
+                            <h4>Coleira cinza </h4>
                             <h6>R$ 12,90</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
@@ -143,8 +113,8 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/Coleira3.jpg" alt="Item 4">
-                            <h4>Coleira rosa com decoração de patinha mais fofa</h4>
+                            <img src="./images/Coleira3.jpg" alt="Item 4">
+                            <h4>Coleira rosa </h4>
                             <h6>R$ 12.90</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
@@ -152,8 +122,8 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/Coleira4.jpg" alt="Item 5">
-                            <h4>Coleira azul bebê com decoração de patinha mais fofa</h4>
+                            <img src="./images/Coleira4.jpg" alt="Item 5">
+                            <h4>Coleira azul bebê </h4>
                             <h6>R$ 12,90</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
@@ -161,8 +131,8 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/1arnêsdecão.jpg" alt="Item 6">
-                            <h4>Arnês para animal da cor rosa</h4>
+                            <img src="./images/1arnêsdecão.jpg" alt="Item 6">
+                            <h4>Arnês para animal </h4>
                             <h6>R$ 25,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
@@ -170,8 +140,8 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/arnês1.jpg" alt="Item 7">
-                            <h4>Arnês para animais com suave para qualquer ocasião</h4>
+                            <img src="./images/arnês1.jpg" alt="Item 7">
+                            <h4>Arnês para animais para qualquer ocasião</h4>
                             <h6>R$ 20,00</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
@@ -179,36 +149,24 @@
 
 
                         <div class="item">
-                            <img src="./dist/images/coleira5.jpg" alt="Item 8">
-                            <h4>Coleira colorida com uma nuvenzinha</h4>
+                            <img src="./images/coleira5.jpg" alt="Item 8">
+                            <h4>Coleira colorida</h4>
                             <h6>R$ 12,90</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-
-
 
                         <div class="item ">
-                            <img src="./dist/images/coleira6.jpg" alt="Item 9">
-                            <h4>Coleira cinza com uma nuvenzinha</h4>
+                            <img src="./images/Colar7.jpg" alt="Item 9">
+                            <h4>Coleira rosa graciosa</h4>
                             <h6>R$ 12,90</h6>
                             <a href="single-product.html">Comprar</a>
                         </div>
-
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-       
-       
-    
-
-  <!-- Modal Contato -->
-
-    
-
-  <!-- Modal Contato -->
     <div class="modal fade" id="modalContato" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content" style="background-color: #e0f7fa;">
@@ -334,10 +292,10 @@
             <div class="modal-footer">
                 <button type="button " class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
             </div>
-          
+
         </div>
     </div>
-   <div class="footer bg-primary">
+    <div class="footer bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-md-6">
@@ -368,44 +326,39 @@
             </div>
         </div>
     </div>
-     <footer>
-  <!-- Resto do conteúdo do footer -->
-  <div class="row">
+
     <div class="col-md-9 mx-auto">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center mb-4">
-          <h2>Receba nossas promoções</h2>
-          <form action="#" method="POST" class="row form-primary">
-            <div class="col-md-6 mb-4">
-              <label for="subscribe-name" class="form-label">Nome:</label>
-              <input type="text" class="form-control" id="subscribe-name" name="subscribe-name" required>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-4">
+                <h2>Receba nossas promoções</h2>
+                <form action="#" method="POST" class="row form-primary">
+                    <div class="col-md-6 mb-4">
+                        <label for="subscribe-name" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="subscribe-name" name="subscribe-name" required>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="subscribe-email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="subscribe-email" name="subscribe-email" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                    </div>
+                </form>
             </div>
-            <div class="col-md-6 mb-4">
-              <label for="subscribe-email" class="form-label">E-mail:</label>
-              <input type="email" class="form-control" id="subscribe-email" name="subscribe-email" required>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Inscrever-se</button>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="sub-footer bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>© 2023 Gatopetsdog. Todos os direitos reservados
-            Desenvolvido por: Roseli Mariano</p>
+    <div class="sub-footer bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>©2023 Gatopetsdog. Todos os direitos reservados
+                        Desenvolvido por: Roseli Mariano</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  
 
-
-  <!--
+    <!--
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
    
@@ -415,11 +368,8 @@
     -->
 
     <script src="https://kit.fontawesome.com/2c4e37e27c.js" crossorigin="anonymous"></script>
-   
-    <script src="./dist/js/scripts.min.js"></script>
-
-
-
+    <!-- código js unificado -->
+    <script src="./js/scripts.min.js"></script>
 </body>
 
 </html>

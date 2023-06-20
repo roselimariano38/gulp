@@ -1,5 +1,6 @@
 body {
-  background-color: #52d7ff;
+  width: 100%;
+  background-color: #C8D4DE;
   font-family: 'Roboto', sans-serif;
   transition: all 0.5s;
 
@@ -13,43 +14,63 @@ img {
   height: auto;
 }
 
-@keyframes blink {
+.banner {
+
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+.baneer1 {
+  max-width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.banner p {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: waveAnimation;
+  margin: 10px;
+}
+
+
+
+
+@keyframes waveAnimation {
   0% {
-    opacity: 1;
+    transform: translateY(0);
   }
 
   50% {
-    opacity: 0;
+    transform: translateY(-10px);
   }
 
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.piscar-image {
-  animation: blink 2s infinite;
-}
 
 p {
   margin-bottom: 0px;
   font-size: 14px;
-  color: #4a4a4a00;
+  color: #fff;
   line-height: 24px;
 }
 
 .input-clicked {
   background-color: #5255ff;
-}
-
-.custom-header {
-  background-color: #5255ff;
-  width: 100%;
-}
-
-.custom-header {
-  background-color: #5255ff;
-  width: 100%;
 }
 
 a {
@@ -161,15 +182,14 @@ a {
 }
 
 .sub-footer {
-  background-color: #52d7ff;
-  padding: 20px 0;
 
+  padding: 20px 0;
   text-align: center;
 }
 
 .sub-footer p {
   margin: 0;
-  color: #000;
+
 }
 
 
@@ -189,24 +209,11 @@ a {
   align-items: flex-start;
 }
 
-.navbar-toggler {
-  margin-left: 0;
-}
-
-.offcanvas-body {
-  background-color: #17bdff;
-}
 
 .header-width {
   width: 96.5%;
   margin: 0 auto;
 }
-
-.header-width {
-  width: 96.5%;
-  margin: 0 auto;
-}
-
 
 .owl-carousel .item {
   text-align: center;
@@ -216,23 +223,6 @@ a {
   animation: blinking 3s infinite;
 }
 
-
-
-.owl-carousel .item .ripple-image {
-  animation: blinking 1s infinite;
-}
-
-
-
-
-.owl-carousel .item .ripple-image {
-  animation: blinking 1s infinite;
-}
-
-.navbar-brand {
-  color: #000;
-}
-
 .new-item {
   background-color: #ff7300;
   color: #ffffff;
@@ -240,11 +230,6 @@ a {
   font-weight: bold;
 }
 
-
-
-.rounded-circle {
-  border-radius: 50%;
-}
 
 .img-responsive {
   max-width: 100%;
